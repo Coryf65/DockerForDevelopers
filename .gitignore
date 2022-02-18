@@ -351,3 +351,4 @@ MigrationBackup/
 
 # not include data folder
 /2-backend-demo/database
+2-backend-demo/data
