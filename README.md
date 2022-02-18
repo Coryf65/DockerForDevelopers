@@ -21,11 +21,13 @@
 
 2. Create `.dockerignore` to not include items
 
-3. Build image from the `Dockerfile` using `docker build -t name/somename .`
+3. Build an image from the `Dockerfile` using `docker build -t name/somename .`
 
 4. Now we can see the images created `docker images`
 
-5. 
+5. Now run our container `docker run -p port:port name/name`
+
+6. Now our container is running see all running with `docker ps`
 
 ### Common Commands
 
@@ -124,7 +126,6 @@
 
         An anonymous volume is similar to a named volume, however, it can be difficult to refer to the same volume over time when it is an anonymous volume. Docker handles where the files are stored.
 
-
 - Image
 
     Docker images are the basis of containers. An Image is an ordered collection of root filesystem changes and the corresponding execution parameters for use within a container runtime. An image typically contains a union of layered filesystems stacked on top of each other. An image does not have state and it never changes.
@@ -159,8 +160,6 @@
     */*/temp*
     temp?
     ```
-
-
 
 - Dockerfile
 
