@@ -51,6 +51,31 @@
     docker pull
     ```
 
+5. Compose is a tool for defining and running multi-container Docker applications.
+
+    ```sh
+    docker-compose build
+    ```
+
+6. use compose and run everything, and also build a certain container first, like the example mongo first then app
+
+    ```sh
+    docker-compose up -d mongo
+    docker-compose up -d app
+    ```
+
+7. Check logs of a container, like mongo
+
+    ```sh
+    docker logs `contianerID`
+    ```
+
+8. Stop container
+
+    ```sh
+    
+    ```
+
 #### Terminololgy
 
 - all terms in the Docker [Glossary](https://docs.docker.com/glossary/)

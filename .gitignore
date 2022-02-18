@@ -350,4 +350,4 @@ MigrationBackup/
 .ionide/
 
 # not include data folder
-\2-backend-demo\data
+/2-backend-demo/database
