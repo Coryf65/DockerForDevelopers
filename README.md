@@ -84,10 +84,10 @@
     docker logs `ID`
     ```
 
-8. Stop all containers
+8. Stop a container by ID
 
     ```sh
-    docker-compose stop
+    docker-compose stop `ID`
     ```
 
 9. Remove an image
