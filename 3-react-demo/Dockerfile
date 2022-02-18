@@ -1,3 +1,5 @@
+# build instructions for React app
+
 # get an image of node from Dockerhub
 FROM node
 

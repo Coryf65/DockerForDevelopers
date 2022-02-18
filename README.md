@@ -15,6 +15,18 @@
 - MongoDB
 - some example apps to use in the containers
 
+## Basic way to setup an app in Docker
+
+1. Create `Dockerfile` this contains instructions how to build an image
+
+2. Create `.dockerignore` to not include items
+
+3. Build image from the `Dockerfile` using `docker build -t name/somename .`
+
+4. Now we can see the images created `docker images`
+
+5. 
+
 ### Common Commands
 
 > all Commands listed in the Docs [here](https://docs.docker.com/engine/reference/commandline/docker/)
@@ -67,13 +79,19 @@
 7. Check logs of a container, like mongo
 
     ```sh
-    docker logs `contianerID`
+    docker logs `ID`
     ```
 
 8. Stop all containers
 
     ```sh
     docker-compose stop
+    ```
+
+9. Remove an image
+
+    ```sh
+    docker rmi 'ID'
     ```
 
 #### Terminololgy
