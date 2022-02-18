@@ -70,10 +70,10 @@
     docker logs `contianerID`
     ```
 
-8. Stop container
+8. Stop all containers
 
     ```sh
-    
+    docker-compose stop
     ```
 
 #### Terminololgy
