@@ -1,5 +1,4 @@
-# build instructions for React app
-
+# Client Dockerfile
 # get an image of node from Dockerhub
 FROM node
 

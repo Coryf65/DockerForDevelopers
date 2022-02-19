@@ -1,16 +1,30 @@
 version: '3.9'
 services:
+  # Frontend Build
+  client:
+    container_name: client
+    restart: always
+    build: ./client
+    ports:
+      - "3000:3000"
+    links:
+      - app
+  # API build
   app: 
     container_name: app
     restart: always
-    build: .
+    build: ./api
     ports:
       - "4000:4000"
-    links:
+    depends_on:
       - mongo
+  # Mongo DB build
   mongo:
     container_name: mongo
     image: mongo
+    restart: always
+    expose:
+      - 27017
     volumes:
       - ./data:/data/db
     ports:
