@@ -96,6 +96,47 @@
     docker rmi 'ID'
     ```
 
+### Tools that use containers
+
+1. Docker Swarms
+
+    - Swarm Docs [here](https://docs.docker.com/engine/swarm/)
+
+    - tool installed and enabled by default with docker
+    - used to manage clusters of nodes
+    - virtual or physical
+
+    - start
+
+    > Need Docker installed on Host
+
+    ```sh
+    docker swarm init
+    ```
+
+    - ssh into a machine and use the given command, from previous command, this will add the given machine into the swarm
+
+    ```sh
+    docker swarm join --token SWMTKN-1-4by6cpsjwmquor3rsfzk0d14jvfy631cghutltntsxhuju1e6g-72orh2if4s2z5cw4wcn1er2e0 192.168.65.3:2377
+    ```
+
+    - See our nodes
+
+    ```sh
+    docker node ls
+    ```
+
+2. Kubernetes / K8s
+
+    - K8s Docs [here](https://kubernetes.io/)
+    - K8s Basics [start](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
+    - MiniKube [here](https://kubernetes.io/docs/tutorials/hello-minikube/)
+
+    - industry standard, built by google
+    - similar to swarm
+    - schedule and deploy large clusters
+    - more customizable
+
 #### Terminololgy
 
 - all terms in the Docker [Glossary](https://docs.docker.com/glossary/)
