@@ -117,7 +117,7 @@
     - ssh into a machine and use the given command, from previous command, this will add the given machine into the swarm
 
     ```sh
-    docker swarm join --token SWMTKN-1-4by6cpsjwmquor3rsfzk0d14jvfy631cghutltntsxhuju1e6g-72orh2if4s2z5cw4wcn1er2e0 192.168.65.3:2377
+    docker swarm join --token SWMTKN-1-token 192.168.0.2:2377
     ```
 
     - See our nodes
