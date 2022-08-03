@@ -95,6 +95,19 @@
     ```sh
     docker rmi 'ID'
     ```
+## Demo Example of using SQL Server
+
+1. pull image
+
+2. build container
+
+3. connect using *VSCode* extension **SQL Server (mssql)**
+
+    - `{ip}\{container name},{port}`
+    - Example: `localhost\test-sqlserver-2017,1401`
+    
+    -
+
 
 ### Tools that use containers
 
